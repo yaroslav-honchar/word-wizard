@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   plugins: ["@trivago/prettier-plugin-sort-imports"],
   bracketSpacing: true,
   endOfLine: "lf",

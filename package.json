@@ -2,7 +2,6 @@
   "name": "word-wizard",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -14,6 +13,10 @@
   },
   "jest": {
     "preset": "jest-expo"
+  },
+  "lint-staged": {
+    "./**/*.{ts,tsx,js,jsx}": "npm run format",
+    "./**/*.{ts,tsx}": "npm run lint"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
@@ -27,6 +30,7 @@
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.6",
     "expo-web-browser": "~13.0.3",
+    "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.2",
@@ -55,6 +59,7 @@
     "prettier": "^3.3.2",
     "prettier-plugin-sort-imports": "^1.8.5",
     "react-test-renderer": "18.2.0",
+    "tailwindcss": "^3.3.2",
     "typescript": "~5.3.3"
   },
   "private": true
