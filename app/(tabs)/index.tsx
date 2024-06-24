@@ -7,7 +7,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView className={"flex-grow"}>
       <ThemedView className={"flex-grow"}>
-        <ThemedText className={"bg-blue-600"}>Hello</ThemedText>
+        <ThemedText>Hello</ThemedText>
       </ThemedView>
     </SafeAreaView>
   )
